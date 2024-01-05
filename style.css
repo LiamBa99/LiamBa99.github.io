@@ -1,5 +1,71 @@
+@font-face {
+    font-family: DMSerifDisplay;
+    src: url(sansation_light.woff);
+}
+
+body {
+    background-color: #151F28;
+}
+
+.page-container {
+    display: inline-flex;
+    margin: 15px 12px;
+    margin-bottom: 75px;
+    min-width: 259px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: #131c23;
+    border-radius: 15px;
+}
+
+.portrait-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+}
+
+.name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: rgb(233, 233, 250);
+    text-align: center;
+}
+
+.occupation {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    color: rgb(233, 233, 250);
+    text-align: center;
+    background-color: rgb(15, 22, 29);
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 15px;
+}
+
+.line-break {
+    width: 240px;
+    color: white;
+}
+
 .navbar {
-    background-color: 30404E;
+    background-color: #30404E;
+    display: flex;
+    align-items: center;
     overflow: hidden;
 }
 
