@@ -3,32 +3,47 @@
     src: url(sansation_light.woff);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #151F28;
 }
 
 .page-container {
-    display: inline-flex;
-    margin: 15px 12px;
-    margin-bottom: 75px;
-    min-width: 259px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    margin-left: 42px;
+    margin-top: 42px;
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 300px;
 }
 
 .sidebar {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
     width: 300px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
-    padding-top: 20px;
     background-color: #131c23;
     border-radius: 15px;
+    height: calc(100% - 100px);
+    margin-bottom: 20px;
 }
 
+
 .portrait-photo {
+    margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -100,7 +115,7 @@ body {
     border-radius: 15px;
 }
 
-.email-icon, .phone-icon, .location-icon {
+.email-icon, .phone-icon, .location-icon, .social-button {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(109%);
 }
 
@@ -119,28 +134,37 @@ body {
     margin-top: 0px;
 }
 
-.navbar {
-    background-color: #30404E;
+.media-button-container {
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(15, 22, 29);
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-top: auto;
 }
 
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.media-button {
+    background-color: white;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgb(15, 22, 29);
+    z-index: 0;
+    border-radius: 15px;
 }
 
-.navbar a.active {
-    background-color: #3843a4;
-    color: white;
+.container-section {
+    display: none;
+}
+
+.container-section.active {
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+    margin-left: 10px;
 }
