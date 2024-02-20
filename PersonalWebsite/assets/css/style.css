@@ -1,0 +1,170 @@
+@font-face {
+    font-family: DMSerifDisplay;
+    src: url(sansation_light.woff);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151F28;
+}
+
+.page-container {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    margin-left: 42px;
+    margin-top: 42px;
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 300px;
+}
+
+.sidebar {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: #131c23;
+    border-radius: 15px;
+    height: calc(100% - 100px);
+    margin-bottom: 20px;
+}
+
+
+.portrait-photo {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+}
+
+.name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: rgb(233, 233, 250);
+    text-align: center;
+}
+
+.occupation {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    color: rgb(233, 233, 250);
+    text-align: center;
+    background-color: rgb(15, 22, 29);
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 15px;
+}
+
+.student {
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.degree {
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.line-break {
+    width: 240px;
+    color: white;
+}
+
+.email-container, .phone-container, .location-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+
+.email, .phone-number, .location {
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: rgb(233, 233, 250);
+    text-align: center;
+}
+
+.email-icon-container, .phone-icon-container, .location-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30404E;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+}
+
+.email-icon, .phone-icon, .location-icon, .social-button {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(109%);
+}
+
+.email-line-break, .phone-line-break, .location-line-break {
+    border-color: #30404E;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.email-title, .phone-title, .location-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 12px;
+    color: #5a6670;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.media-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(15, 22, 29);
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-top: auto;
+}
+
+.media-button {
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgb(15, 22, 29);
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.container-section {
+    display: none;
+}
+
+.container-section.active {
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+    margin-left: 10px;
+}
