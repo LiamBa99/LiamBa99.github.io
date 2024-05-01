@@ -24,7 +24,6 @@ body {
 
 .main-content {
     flex: 1;
-    padding-left: 300px;
 }
 
 .sidebar {
@@ -151,11 +150,9 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
-    position: fixed;
+    justify-content: flex-start;
     background-color: rgb(15, 22, 29);
-    z-index: 0;
-    border-radius: 15px;
+    gap: 5px;    
 }
 
 .container-section {
@@ -165,6 +162,113 @@ body {
 .container-section.active {
     display: block;
     overflow-y: scroll;
-    height: 100%;
+    height: calc(100% - 60px);
     margin-left: 10px;
+}
+
+#resume-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-container {
+    display: flex;
+}
+
+
+/* CSS */
+.media-button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #c9c9c9;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #c9c9c9;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.media-button:disabled {
+  pointer-events: none;
+}
+
+.media-button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.media-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.buffer {
+    width: 300px;
+    height: 100%;
+    background-color: #131c23;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.resume-header {
+    text-align: center;
+}
+
+.resume-header h1 {
+    margin-bottom: 0px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contact-info p {
+    margin: 0px;
+}
+
+.education-header {
+    text-align: left;
+}
+
+.education-header h2 {
+    margin: 0px;
+}
+
+.ubc-education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubc-left h3 {
+    margin: 0px;
+    font-weight: normal;
+    color: rgb(55, 118, 177);
+}
+
+.ubc-left p {
+    font-style: italic;
+}
+
+.ubc-right h3, p {
+    margin: 0px;
 }
