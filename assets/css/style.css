@@ -79,6 +79,7 @@ body {
 .degree {
     margin-top: 5px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .line-break {
@@ -259,7 +260,7 @@ body {
     justify-content: space-between;
 }
 
-.ubc-left h3 {
+.ubc-left h3, .ubc-right h3 {
     margin: 0px;
     font-weight: normal;
     color: rgb(55, 118, 177);
@@ -267,8 +268,110 @@ body {
 
 .ubc-left p {
     font-style: italic;
+    text-align: left;
 }
 
 .ubc-right h3, p {
     margin: 0px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.sfu-education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sfu-left h3, .sfu-right h3 {
+    margin: 0px;
+    margin-top: 8px;
+    font-weight: normal;
+    color: rgb(55, 118, 177);
+}
+
+.sfu-left p {
+    font-style: italic;
+}
+
+.sfu-right h3, p {
+    margin: 0px;
+    margin-top: 8px;
+    text-align: right;
+    font-weight: normal;    
+}
+
+.work-experience-header h2 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.advisor-flow-header, .alex-hope-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advisor-flow-header-left h3, p {
+    margin: 0px;
+    text-align: left;
+}
+
+.advisor-flow-header-left h3 {
+    color: rgb(55, 118, 177);
+    font-weight: normal;
+}
+
+.advisor-flow-header-left p, .alex-hope-header-left p {
+    font-style: italic;
+}
+
+.advisor-flow-header-right p, .alex-hope-header-right p {
+    margin: 0px;
+    font-weight: normal;
+}
+
+ul li {
+    margin: 0px;
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+ul {
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.technical-projects-header h2 {
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.folio-top h4, .folio-top p, .casino-top p, .portfolio-top p, .casino-top h4, .portfolio-top h4, .alex-hope-header-left h4{
+    margin: 0px;
+}
+
+.volunteer-experience-header h2, .technical-skills-header h2 {
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.portfolio-top, .folio-top, .casino-top {
+    display: flex;
+}
+
+.portfolio-top h4, .folio-top h4, .casino-top h4, .alex-hope-header-left h4 {
+    color: rgb(55, 118, 177);
+    font-weight: normal;
+}
+
+.languages-header h4, .frameworks-header h4, .tools-header h4, .languages-list p, .tools-list p, .frameworks-list p {
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.technical-skills-header {
+    padding-bottom: 20px;
+}
+
+.languages, .tools, .frameworks {
+    display: flex;
 }
