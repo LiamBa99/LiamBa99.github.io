@@ -377,7 +377,7 @@ ul {
     display: flex;
 }
 
-#portfolio-container {
+#portfolio-container, #contact-container {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -429,3 +429,40 @@ ul {
 .project-info p {
     text-align: center;
 }
+
+.folio-photo, .casino-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.portfolio-photo {
+    height: 100%;
+}
+
+.project-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131c23;
+}
+
+.flex-contact-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #131c23;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-contact-container {
+    background-color: #162e41;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-color:#30404E;
+    border-width: 16px;
+    border-radius: 16px;
+}
+
