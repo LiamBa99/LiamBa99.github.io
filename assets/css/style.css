@@ -377,7 +377,7 @@ ul {
     display: flex;
 }
 
-#portfolio-container, #contact-container {
+#portfolio-container, #contact-container, #about-container {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -408,8 +408,8 @@ ul {
 
 .project {
     background-color: #30404E;
-    width: 350px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-style: solid;
     border-radius: 16px;
 }
@@ -423,7 +423,7 @@ ul {
 
 .project-photo {
     width: 100%;
-    height: 70%;
+    height: 60%;
     border-style: solid;
     border-radius: 8px;
 }
@@ -464,4 +464,73 @@ ul {
 
 .project-info h4 {
     padding-top: 4px;
+}
+
+.portfolio-header h4 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size:larger;
+}
+
+.about-flex {
+    display: flex;
+    background-color: #131c23;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.about-me {
+    width: 100%;
+}
+
+.about-header, .working-header, .hobbies-header {
+    color: #c9c9c9;
+    font-size: 32px;
+    margin-bottom: 0px;
+    align-items: left;
+}
+
+.about-header hr, .working-header hr, .hobbies-header hr {
+    width: 15%;
+    margin: 0;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.about-header h4, .working-header h4, .hobbies-header h4 {
+    margin-bottom: 8px;
+}
+
+.working-header hr {
+    width: 27%;
+}
+
+.working-header {
+    margin-bottom: 32px;
+}
+
+.working-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.working-item {
+    background-color: rgb(15, 22, 29);
+    width: calc(50% - 30px);
+    height: 100px;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #c9c9c9;
+}
+
+.working-flex-row {
+    display: flex;
+    gap: 60px;
+    align-items: center;
 }
