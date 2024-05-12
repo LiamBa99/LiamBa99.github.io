@@ -11,3 +11,11 @@ function showSection(sectionId) {
         selectedSection.classList.add('active');
     }
 }
+
+document.getElementById("linkedin-button").addEventListener("click", function() {
+    window.open("https://www.linkedin.com/in/liam-badgley/", "_blank");
+});
+
+document.getElementById("github-button").addEventListener("click", function() {
+    window.open("https://github.com/LiamBa99", "_blank");
+});
