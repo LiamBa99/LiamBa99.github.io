@@ -160,13 +160,6 @@ body {
     display: none;
 }
 
-.container-section.active {
-    display: block;
-    overflow-y: scroll;
-    height: calc(100% - 60px);
-    margin-left: 10px;
-}
-
 #resume-container {
     padding-left: 50px;
     padding-right: 50px;
@@ -381,7 +374,6 @@ ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .flex-portfolio {
@@ -403,7 +395,7 @@ ul {
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 0px;
 }
 
 .project {
@@ -480,6 +472,12 @@ ul {
     height: 100%;
     flex-direction: column;
     padding: 40px;
+    border-style: solid;
+    border-bottom-right-radius: 15px;
+    border-right-color: #c9c9c9;
+    border-bottom-color: #c9c9c9;
+    border-left-width: 0;
+    margin: 0px;
 }
 
 .about-me {
@@ -503,6 +501,7 @@ ul {
 
 .about-header h4, .working-header h4, .hobbies-header h4 {
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .working-header hr {
@@ -518,12 +517,13 @@ ul {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .working-item {
     background-color: rgb(15, 22, 29);
     width: calc(50% - 30px);
-    height: 100px;
+    height: 140px;
     border-radius: 16px;
     border-style: solid;
     border-color: #c9c9c9;
@@ -533,4 +533,37 @@ ul {
     display: flex;
     gap: 60px;
     align-items: center;
+}
+
+.about-body p {
+    color: #c9c9c9;
+    font-size: larger;
+    padding-top: 16px;
+}
+
+.working-item h4 {
+    color: #c9c9c9;
+    margin: 4px;
+    margin-left: 8px;
+}
+
+.working-item p {
+    color: #c9c9c9;
+    margin: 0px;
+    margin-left: 8px;
+}
+
+.working-item hr {
+    width: 40%;
+    margin-left: 8px;
+    color:rgb(55, 118, 177);
+    border-style: solid;
+    border-color: rgb(55, 118, 177);
+}
+
+.container-section.active {
+    display: block;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+    margin-left: 10px;
 }
