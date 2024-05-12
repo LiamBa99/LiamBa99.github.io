@@ -525,8 +525,6 @@ ul {
     width: calc(50% - 30px);
     height: 140px;
     border-radius: 16px;
-    border-style: solid;
-    border-color: #c9c9c9;
 }
 
 .working-flex-row {
@@ -543,19 +541,19 @@ ul {
 
 .working-item h4 {
     color: #c9c9c9;
-    margin: 4px;
-    margin-left: 8px;
+    margin: 8px;
+    margin-left: 16px;
 }
 
 .working-item p {
     color: #c9c9c9;
-    margin: 0px;
-    margin-left: 8px;
+    margin: 8px;
+    margin-left: 16px;
 }
 
 .working-item hr {
-    width: 40%;
-    margin-left: 8px;
+    width:calc(100% - 32px);
+    margin-left: 16px;
     color:rgb(55, 118, 177);
     border-style: solid;
     border-color: rgb(55, 118, 177);
